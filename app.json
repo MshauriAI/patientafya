@@ -9,10 +9,7 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true,
-      "infoPlist": {
-        "NSContactsUsageDescription": "This app requires contacts access to help you connect with healthcare providers"
-      }
+      "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
@@ -22,18 +19,11 @@
       "package": "com.afyamkononi.patient",
       "versionCode": 1,
       "permissions": [
-        "android.permission.ACCESS_NETWORK_STATE",
-        "android.permission.CAMERA",
-        "android.permission.INTERNET",
-        "android.permission.MODIFY_AUDIO_SETTINGS",
-        "android.permission.RECORD_AUDIO",
-        "android.permission.SYSTEM_ALERT_WINDOW",
-        "android.permission.WAKE_LOCK",
-        "android.permission.BLUETOOTH",
-        "android.permission.READ_CONTACTS",
-        "android.permission.WRITE_CONTACTS",
-        "android.permission.SEND_SMS",
-        "INTERNET"
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "CAMERA"
       ],
       "config": {
         "googleMaps": {
@@ -56,18 +46,6 @@
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
-        }
-      ],
-      [
-        "expo-contacts",
-        {
-          "contactsPermission": "Allow $(PRODUCT_NAME) to access your contacts."
-        }
-      ],
-      [
-        "expo-sms",
-        {
-          "smsPermission": "Allow $(PRODUCT_NAME) to send SMS messages."
         }
       ]
     ],
